@@ -98,7 +98,8 @@
         src="{% static 'img/login.png'%}"
         style="width: 300px; margin-top: 10px"
         onclick="login()"> </button>
-        <a href="{% provider_login_url 'kakao' %}">
+        {% comment %} Kakao 로그인 일시 제거 {% endcomment %}
+        {# <a href="{% provider_login_url 'kakao' %}">...</a> #}
         <img
         src="{% static 'img/kakaologin.png'%}"
         style="width: 300px; margin-top: 10px"
