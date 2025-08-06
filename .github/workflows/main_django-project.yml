@@ -51,7 +51,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: python-app
-          path: mandalaart/
 
       - name: "Deploy to Azure Web App"
         uses: azure/webapps-deploy@v3
@@ -60,3 +59,4 @@ jobs:
           app-name: "django-project"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2B314E488FA4E52AAF3152A74623855 }}
+
